@@ -5,11 +5,15 @@
   "content_scripts": [
     {
       "matches": ["https://www.bilibili.com/"],
-      "js": ["main.js"]
+      "js": ["utils.js", "main.js"]
     },
     {
       "matches": ["https://www.bilibili.com/video/*"],
-      "js": ["play.js"]
+      "js": ["utils.js", "play.js"]
+    },
+    {
+      "matches": ["https://t.bilibili.com/*"],
+      "js": ["utils.js", "space.js"]
     }
   ]
 }
